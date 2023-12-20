@@ -1,0 +1,16 @@
+type Query{
+    movies: [Movie]
+    movie(id: Int): Movie
+}
+
+type Movie {
+    title: String
+    cover: String
+    year: String
+    cost: Float
+    starring: [Starring]
+}
+
+type Starring {
+    name:String
+}
